@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Members</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+
+    <style>
+        body {
+            background-color: #e0f2fe;
+        }
+        .club-box {
+            max-width: 550px;
+            margin: 40px auto;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card shadow club-box">
+            
+            <div class="card-header bg-primary text-white text-center py-3">
+                <h2 class="mb-0">School Coding Club</h2>
+                <small>Add a new student to our club</small>
+            </div>
+
+            <div class="card-body p-4">
+
+                <div class="mb-3">
+                    <label for="first_name" class="form-label fw-bold">First Name:</label>
+                    <input type="text" id="first_name" class="form-control" placeholder="Type first name here">
+                </div>
+
+                <div class="mb-3">
+                    <label for="last_name" class="form-label fw-bold">Last Name:</label>
+                    <input type="text" id="last_name" class="form-control" placeholder="Type last name here">
+                </div>
+
+                <button id="add_btn" class="btn btn-success w-100 fw-bold mb-4" py-click="add_member">
+                    Add New Member
+                </button>
+
+                <div id="output" class="alert alert-info mb-0">
+                    Loading club members 
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="py" src="./main.py"></script>
+</body>
+</html>
